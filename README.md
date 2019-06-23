@@ -49,8 +49,8 @@
             }
         }
         dependencies {
-            compile 'net.doodream:yarmi-core:0.1.1-SNAPSHOT'
-            compile 'net.doodream.yarmi:sdp-mdns:0.1.1-SNAPSHOT'
+            compile 'net.doodream:yarmi-core:0.1.1'
+            compile 'net.doodream.yarmi:sdp-mdns:0.1.1'
             compile 'org.jmdns:jmdns:3.5.1'
         }
         ```

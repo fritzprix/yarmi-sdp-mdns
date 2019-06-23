@@ -61,7 +61,6 @@ public class MDnsServiceRegistry implements ServiceRegistry {
         final int id = serviceInfo.hashCode();
         final ServiceInfo svcInfo = convert(serviceInfo);
         if (serviceMap.contains(id)) {
-
             return id;
         }
         try {

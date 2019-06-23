@@ -115,6 +115,7 @@ public class MDnsServiceDiscovery implements ServiceDiscovery {
         if (isStarted.compareAndSet(true, false)) {
             jmDns.removeServiceListener(MDnsServiceRegistry.SERVICE_TYPE, mListener);
             cancelDiscoveryTask();
+            executorService.shutdown();
         }
     }
 

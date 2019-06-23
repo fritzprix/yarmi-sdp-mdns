@@ -35,14 +35,14 @@ dependencies {
     // This dependency is exported to consumers, that is to say found on their compile classpath.
 
     // This dependency is used internally, and not exposed to consumers on their own compile classpath.
-    compileOnly 'net.doodream:yarmi-core:0.1.1-SNAPSHOT'
+    compileOnly 'net.doodream:yarmi-core:0.1.1'
     implementation 'org.jmdns:jmdns:3.5.1'
 
     deployerJar "ar.com.synergian:wagon-git:0.2.3"
 
     // Use JUnit test framework
     testImplementation 'junit:junit:4.12'
-    testImplementation 'net.doodream:yarmi-core:0.1.1-SNAPSHOT'
+    testImplementation 'net.doodream:yarmi-core:0.1.1'
     testImplementation 'io.reactivex.rxjava2:rxjava:2.2.8'
 }
 
@@ -51,7 +51,7 @@ uploadArchives {
     repositories.mavenDeployer {
         pom.groupId = 'net.doodream.yarmi'
         pom.artifactId = 'sdp-mdns'
-        pom.version = '0.1.0'
+        pom.version = '0.1.1'
         configuration = configurations.deployerJar
         repository(url: "git:releases://git@github.com:fritzprix/yarmi.git")
         snapshotRepository(url: "git:snapshots://git@github.com:fritzprix/yarmi.git")

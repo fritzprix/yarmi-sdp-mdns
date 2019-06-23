@@ -51,7 +51,7 @@ uploadArchives {
     repositories.mavenDeployer {
         pom.groupId = 'net.doodream.yarmi'
         pom.artifactId = 'sdp-mdns'
-        pom.version = '0.1.0'
+        pom.version = '0.1.1-SNAPSHOT'
         configuration = configurations.deployerJar
         repository(url: "git:releases://git@github.com:fritzprix/yarmi.git")
         snapshotRepository(url: "git:snapshots://git@github.com:fritzprix/yarmi.git")
